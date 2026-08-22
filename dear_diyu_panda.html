@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dear Diyu 💗</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0; min-height:100vh; overflow:hidden;
+  display:flex; align-items:center; justify-content:center;
+  font-family: "Segoe UI", sans-serif;
+  background:linear-gradient(135deg,#ffd6e7,#fff0f6,#ffd9e8);
+  color:#5b2940;
+}
+.hearts span{
+  position:fixed; bottom:-30px; font-size:22px;
+  animation:float 7s linear infinite; opacity:.65;
+}
+.hearts span:nth-child(1){left:8%;animation-delay:0s}
+.hearts span:nth-child(2){left:20%;animation-delay:2s}
+.hearts span:nth-child(3){left:35%;animation-delay:4s}
+.hearts span:nth-child(4){left:52%;animation-delay:1s}
+.hearts span:nth-child(5){left:70%;animation-delay:3s}
+.hearts span:nth-child(6){left:88%;animation-delay:5s}
+@keyframes float{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+
+.card{
+  width:min(92%,480px); padding:30px 24px 34px;
+  text-align:center; border-radius:32px;
+  background:rgba(255,255,255,.72);
+  backdrop-filter:blur(12px);
+  box-shadow:0 20px 60px rgba(130,50,80,.18);
+}
+h1{margin:4px 0 8px;font-size:42px;color:#e84d83}
+.subtitle{font-size:17px;margin-bottom:20px}
+
+.panda{position:relative;width:210px;height:190px;margin:8px auto 15px}
+.head{
+  position:absolute;left:35px;top:18px;width:140px;height:125px;
+  background:#fff;border:4px solid #222;border-radius:50%;
+}
+.ear{position:absolute;width:52px;height:52px;background:#222;border-radius:50%;top:0}
+.ear.left{left:28px}.ear.right{right:28px}
+.eye{
+  position:absolute;width:40px;height:55px;background:#222;border-radius:50%;
+  top:43px;transform:rotate(35deg)
+}
+.eye.left{left:43px}.eye.right{right:43px;transform:rotate(-35deg)}
+.eye:after{
+  content:"";position:absolute;width:10px;height:10px;background:#fff;
+  border-radius:50%;top:12px;left:9px
+}
+.nose{
+  position:absolute;left:58px;top:82px;width:25px;height:18px;
+  background:#222;border-radius:50%
+}
+.muzzle{
+  position:absolute;left:48px;top:90px;width:45px;height:27px;
+  border-bottom:3px solid #222;border-radius:50%
+}
+.heart{
+  position:absolute;right:3px;top:60px;color:#ff477e;font-size:48px;
+  animation:beat 1s infinite
+}
+@keyframes beat{50%{transform:scale(1.2)}}
+
+.kiss{
+  font-size:52px; margin-top:-10px;
+  animation:bob 1.5s ease-in-out infinite
+}
+@keyframes bob{50%{transform:translateY(-7px)}}
+
+.message{
+  font-size:19px;line-height:1.7;margin:12px 0 22px
+}
+.message b{color:#e84d83}
+button{
+  border:0;padding:13px 25px;border-radius:999px;
+  background:#e84d83;color:white;font-size:16px;
+  cursor:pointer;box-shadow:0 8px 20px rgba(232,77,131,.3)
+}
+#secret{display:none;margin-top:18px;font-size:18px;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="hearts">
+  <span>💗</span><span>💕</span><span>💖</span><span>💗</span><span>💞</span><span>💘</span>
+</div>
+
+<main class="card">
+  <h1>Dear Diyu 💗</h1>
+  <div class="subtitle">Tumhare liye ek chhota sa panda kiss 🐼💋</div>
+
+  <div class="panda">
+    <div class="ear left"></div><div class="ear right"></div>
+    <div class="head">
+      <div class="eye left"></div><div class="eye right"></div>
+      <div class="nose"></div><div class="muzzle"></div>
+    </div>
+    <div class="heart">♥</div>
+  </div>
+
+  <div class="kiss">🐼 💋</div>
+
+  <div class="message">
+    <b>Dear Diyu,</b><br>
+    Aaj ke liye <b>I'm really sorry, Diyu. 🥺💗</b><br>Mera intention tumhe hurt karna bilkul nahi tha.<br>Tum meri life ka woh cute sa part ho<br>
+    jiske bina sab kuch thoda sa boring lagta hai. 🥺💗<br><br>
+    Ek panda tumhare liye kiss lekar aaya hai...<br>
+    aur haan, <b>ye kiss sirf tumhare liye hai.</b> 😘
+  </div>
+
+  <button onclick="document.getElementById('secret').style.display='block';this.innerText='I Love You, Diyu 💗'">
+    Click for a little surprise 💌
+  </button>
+
+  <div id="secret">
+    Agar tum smile kar rahi ho,<br>
+    toh samjho mera mission successful. 🐼💕<br>
+    <b>I love you so much, meri kuchu puchu. ❤️🥺</b><br><b>Stay mine, Dear Diyu. 🐼💗</b>
+  </div>
+</main>
+</body>
+</html>
